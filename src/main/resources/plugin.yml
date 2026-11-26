@@ -1,0 +1,50 @@
+name: ModerationPlugin
+version: 1.0.0
+main: fr.moderation.ModerationPlugin
+api-version: "26.2"
+description: Modération par interface (mute, avertir, freeze, ban) avec logs précis
+commands:
+  moderation:
+    description: Ouvre le menu de modération d'un joueur
+    usage: /moderation <joueur>
+    permission: moderation.use
+permissions:
+  moderation.use:
+    description: Utiliser /moderation et ouvrir le menu
+    default: op
+  moderation.mute:
+    description: Mute un joueur
+    default: op
+  moderation.unmute:
+    description: Démute un joueur
+    default: op
+  moderation.warn:
+    description: Avertir un joueur
+    default: op
+  moderation.freeze:
+    description: Freeze un joueur
+    default: op
+  moderation.unfreeze:
+    description: Unfreeze un joueur
+    default: op
+  moderation.ban.temp:
+    description: Bannir temporairement
+    default: op
+  moderation.ban.perm:
+    description: Bannir définitivement
+    default: op
+  moderation.unban:
+    description: Débannir un joueur
+    default: op
+  moderation.logs:
+    description: Consulter les logs d'un joueur
+    default: op
+  moderation.notify:
+    description: Recevoir les notifications de sanctions
+    default: op
+  moderation.reload:
+    description: Recharger la config
+    default: op
+  moderation.bypass:
+    description: Ne peut pas être sanctionné
+    default: false

@@ -1,0 +1,28 @@
+# Lien Discord affiché aux joueurs freeze / bannis pour la demande d'unban
+discord: "https://discord.gg/TON-LIEN"
+
+freeze:
+  # Intervalle (secondes) du message envoyé au joueur freeze
+  reminder-seconds: 30
+
+mute:
+  # Le compteur de mutes ne se reset JAMAIS : 1er mute = 30m, 2ème = 1h, etc.
+  # Au-delà de la liste, la dernière durée est utilisée.
+  durations: ["30m", "1h", "2h", "6h", "1d", "7d"]
+  # Commandes bloquées pendant un mute
+  blocked-commands: [msg, tell, w, whisper, r, reply, t, me, say]
+
+ban:
+  # Durées proposées dans le menu "Temporaire" (s, m, h, d, w)
+  durations: ["1h", "6h", "1d", "3d", "7d", "30d"]
+
+# Raisons proposées dans les menus (18 max)
+reasons:
+  - "Spam"
+  - "Insultes"
+  - "Publicité"
+  - "Comportement toxique"
+  - "Harcèlement"
+  - "Triche / Cheat"
+  - "Bug abuse"
+  - "Autre"
